@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UniSnacks — a TCUNISTA STUDENT-made food marketplace for campus pre-orders." />
+  <title>UniSnacks | TCUNISTA STUDENT Food Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img src="LOGO JOLEBEH OH.png" alt="UniSnacks Logo" class="logo"><span>Uni<span>Snacks</span></span></a>
+      <nav aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#market">Browse food</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#market">Find a snack <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">PAGBATI TCUNISTA!</p>
+        <h1>Your next favorite<br /><em>snack is here.</em></h1>
+        <p class="hero-description">Discover homemade meals, sweet treats, and refreshing drinks from TCUNISTA STUDENT SELLER around campus.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#market">Explore the market <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#about">How it works <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="avatar-stack"><span>🍪</span><span>☕</span><span>🍱</span></span><strong>Freshly made by TCUNISTA STUDENT</strong><span class="muted">near you</span></div>
+      </div>
+      <div class="hero-art" aria-label="Collage of campus food" role="img">
+        <div class="scribble scribble-one">made<br />with care</div>
+        <div class="hero-photo photo-main"></div>
+        <div class="hero-photo photo-small"></div>
+        <div class="floating-sticker">YUM!</div>
+      </div>
+    </section>
+
+    <section class="market-section" id="market">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE CAMPUS MARKET</p><h2>What are you craving?</h2></div>
+        <p class="section-intro">Browse food made by your TCUNISTA SELLER.<br />Order ahead, pick up, and enjoy.</p>
+      </div>
+
+      <div class="market-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search food or seller..." autocomplete="off" /></label>
+        <div class="category-tabs" role="tablist" aria-label="Food categories">
+          <button class="category-tab active" data-category="all" role="tab">All food</button>
+          <button class="category-tab" data-category="meals" role="tab">Meals</button>
+          <button class="category-tab" data-category="snacks" role="tab">Snacks</button>
+          <button class="category-tab" data-category="drinks" role="tab">Drinks</button>
+          <button class="category-tab" data-category="desserts" role="tab">Desserts</button>
+        </div>
+      </div>
+
+      <div class="market-layout">
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+        <aside class="seller-panel">
+          <div class="panel-label">SELLER SPOTLIGHT</div>
+          <div class="seller-avatar">CV</div>
+          <h3>Captain Ver.</h3>
+          <p class="seller-role">Meryenda · Red bench</p>
+          <div class="seller-rating">★★★★★ <span>4.9 (18 reviews)</span></div>
+          <p class="seller-bio">“Sasayaw ako ng dinorobong tubo habang nabenta HAHAHA.”</p>
+          <button class="button button-outline" id="openInquiry" type="button">Ask the seller <span aria-hidden="true">↗</span></button>
+        </aside>
+      </div>
+      <p id="emptyState" class="empty-state" hidden>No food matched your search. Try another keyword or category.</p>
+    </section>
+
+    <section class="how-section" id="about">
+      <div class="section-heading centered"><div><p class="eyebrow">EASY AS 1-2-3</p><h2>Good food, made simple.</h2></div><p class="section-intro">UniSnacks connects you with TCUNISTA STUDENT sellers<br />so you can eat well without the wait.</p></div>
+      <div class="steps">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Find your craving</h3><p>Search food, browse categories, or discover a TCUNISTA STUDENT seller.</p></article>
+        <article class="step-card featured-step"><span class="step-number">02</span><div class="step-icon">◷</div><h3>Pre-order ahead</h3><p>Choose a pickup date and time that fits your class schedule.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon">♡</div><h3>Pick up & enjoy</h3><p>Meet at the seller's pickup spot, then leave a little feedback.</p></article>
+      </div>
+    </section>
+
+    <section class="feedback-section" id="contact">
+      <div class="feedback-copy"><p class="eyebrow">WE'RE LISTENING</p><h2>Have a thought?<br /><em>Tell us about it.</em></h2><p>Help make UniSnacks better for every TCUNISTA STUDENT. Share a suggestion, report a problem, or just say hello.</p><a class="text-link light-link" href="thttps://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tc.unisnaks@gmail.com&amp;su=UniSnacks%20Inquiry">Send us a note <span aria-hidden="true">→</span></a></div>
+      <form id="feedbackForm" class="feedback-form"><label>Your name<input name="name" required placeholder="e.g. Alex" /></label><label>Your feedback<textarea name="feedback" required placeholder="What would you like us to know?"></textarea></label><button class="button button-light" type="submit">Send feedback <span aria-hidden="true">↗</span></button></form>
+    </section>
+  </main>
+
+  <section class="tracking-section" id="orderTracking">
+    <div>
+      <p class="eyebrow">ORDER TRACKING</p>
+      <h2>Check in when you arrive.</h2>
+      <p class="tracking-copy">Use the order ID from your pre-order confirmation to record pickup check-in and check-out times.</p>
+    </div>
+    <form id="trackingForm" class="tracking-form">
+      <label>Order ID<input name="orderId" type="number" min="1" required placeholder="e.g. 24" /></label>
+      <div class="tracking-actions"><button class="button button-primary" type="submit" data-action="check-in">Check in</button><button class="button button-outline" type="submit" data-action="check-out">Check out</button></div>
+      <div class="transaction-progress" aria-label="Transaction progress">
+        <div class="progress-step is-current" data-progress="preordered"><span>1</span><strong>Pre-ordered</strong></div>
+        <div class="progress-line"></div>
+        <div class="progress-step" data-progress="checked_in"><span>2</span><strong>Checked in</strong></div>
+        <div class="progress-line"></div>
+        <div class="progress-step" data-progress="completed"><span>3</span><strong>Completed</strong></div>
+      </div>
+      <p id="trackingStatus" class="tracking-status" role="status"></p>
+    </form>
+  </section>
+
+  <footer><div class="footer-brand"><span></span> <img src="LOGO JOLEBEH OH.png" alt="UniSnacks Logo" class="logo"><span>Uni<span>Snacks</span></span><p>Made with care by TCUNISTA Seller, for TCUNISTA STUDENT.</p><div><a href="#about">About</a><a href="#contact">Feedback</a><a href="#orderTracking">Order tracking</a><a href=https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tc.unisnaks@gmail.com&amp;su=UniSnacks%20Inquiry">Email us</a></div><small>© 2026 UniSnacks · TCUNISTA food marketplace</small></footer>
+
+  <div id="detailsModal" class="modal-backdrop" hidden>
+    <section class="modal product-details-modal" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+      <button class="modal-close close-details" aria-label="Close product details">×</button>
+      <div class="details-top">
+        <img id="detailsImage" src="" alt="" />
+        <div>
+          <p class="eyebrow">PRODUCT DETAILS</p>
+          <h2 id="detailsTitle"></h2>
+          <p id="detailsDescription" class="details-description"></p>
+          <p id="detailsSeller" class="details-seller"></p>
+          <strong id="detailsPrice" class="details-price"></strong>
+        </div>
+      </div>
+      <div class="comments-section">
+        <div class="comments-heading"><div><p class="eyebrow">COMMUNITY FEEDBACK</p><h3>Comments about this food</h3></div><span id="commentCount" class="comment-count"></span></div>
+        <div id="commentsList" class="comments-list"></div>
+        <form id="commentForm" class="comment-form">
+          <label>Leave a comment<input name="name" required placeholder="Your name" /></label>
+          <label>Your comment<textarea name="comment" required placeholder="Share your experience with this food..."></textarea></label>
+          <button class="button button-primary" type="submit">Post comment <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <div id="orderModal" class="modal-backdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close order form">×</button>
+      <p class="eyebrow">PRE-ORDER</p><h2 id="modalTitle">Reserve your food</h2><p class="modal-product" id="modalProduct"></p>
+      <form id="orderForm"><input type="hidden" name="product" /><label>Your name<input name="name" required placeholder="e.g. Maria Santos" /></label><div class="form-row"><label>Pickup date<input name="date" type="date" required /></label><label>Pickup time<input name="time" type="time" required /></label></div><label>Pickup location<select name="location"><option>Red bench</option><option>Foodhall</option><option>Basement</option><option>GuardHouse</option></select></label><label>Note for the seller<textarea name="note" placeholder="Quantity, allergies, or special requests"></textarea></label><div class="contact-choice"><p>Finish your order through:</p><label><input type="radio" name="platform" value="messenger" checked /> Facebook Messenger</label><label><input type="radio" name="platform" value="instagram" /> Instagram DM</label></div><button class="button button-primary full-width" type="submit">Review order <span aria-hidden="true">→</span></button><p class="form-help">Review your receipt before submitting. The order is not saved until you click Submit order.</p></form>
+      <section id="orderReceipt" class="order-receipt" hidden aria-live="polite"><p class="eyebrow">ORDER RECEIPT</p><h3>Check your order</h3><div id="receiptDetails" class="receipt-details"></div><p class="receipt-advice"><strong>Before you submit, please copy the receipt and send it to the designated seller.</strong></p><p class="form-help">Copy the receipt first. Submit order becomes ready after copying.</p><div class="receipt-actions"><button class="button button-outline" id="cancelOrder" type="button">Cancel</button><button class="button button-outline" id="copyReceipt" type="button">Copy receipt</button><button class="button button-primary submit-order-disabled" id="submitOrder" type="button" disabled>Submit order <span aria-hidden="true">↗</span></button></div></section>
+    </section>
+  </div>
+
+  <div id="successReceiptModal" class="modal-backdrop" hidden>
+    <section class="modal success-receipt-modal" role="dialog" aria-modal="true" aria-labelledby="successReceiptTitle">
+      <button class="modal-close" id="closeSuccessReceipt" aria-label="Close receipt">×</button>
+      <p class="eyebrow">ORDER RECEIPT</p>
+      <h2 id="successReceiptTitle">Your order was submitted</h2>
+      <p class="receipt-success-note">Your order has been saved to the system. Please keep your order ID for pickup tracking.</p>
+      <div id="successReceiptDetails" class="success-receipt-details"></div>
+      <div class="success-receipt-actions"><button class="button button-outline" id="printReceipt" type="button">Print receipt</button><button class="button button-primary" id="closeSuccessReceiptAction" type="button">Done</button></div>
+    </section>
+  </div>
+
+  <div id="inquiryModal" class="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="inquiryTitle"><button class="modal-close close-inquiry" aria-label="Close inquiry form">×</button><p class="eyebrow">ASK A SELLER</p><h2 id="inquiryTitle">Send an inquiry</h2><form id="inquiryForm"><label>Your name<input name="name" required placeholder="e.g. Alex" /></label><label>Question<textarea name="question" required placeholder="Ask about ingredients, availability, or pickup..."></textarea></label><button class="button button-primary full-width" type="submit">Open Messenger <span aria-hidden="true">↗</span></button></form></section></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="addition.js"></script>
+</body>
+</html>

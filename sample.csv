@@ -1,0 +1,17 @@
+Field,Type,Null,Key,Default,Extra
+id,"bigint unsigned",NO,PRI,NULL,auto_increment
+buyer_name,varchar(120),NO,,NULL,
+product_id,"int unsigned",NO,,NULL,
+product_name,varchar(160),NO,,NULL,
+seller_name,varchar(120),NO,,NULL,
+price,"decimal(10,2)",NO,,NULL,
+pickup_date,date,NO,MUL,NULL,
+pickup_time,time,NO,,NULL,
+pickup_location,varchar(160),NO,,NULL,
+contact_platform,"enum('messenger','instagram')",NO,,NULL,
+buyer_note,text,YES,,NULL,
+status,"enum('preordered','checked_in','completed','cancelled')",NO,MUL,preordered,
+ordered_at,datetime,NO,MUL,CURRENT_TIMESTAMP,DEFAULT_GENERATED
+checked_in_at,datetime,YES,,NULL,
+checked_out_at,datetime,YES,,NULL,
+time_spent_seconds,"int unsigned",YES,,NULL,
